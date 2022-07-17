@@ -1,9 +1,5 @@
 # Upgenix-QA
 Automating the Upgenix browser
-
-# Upgenix-QA
-Automating the Upgenix browser
-
 <p align="left"> 
 
 <a href="https://www.java.com" target="_blank" rel="noreferrer"> 
