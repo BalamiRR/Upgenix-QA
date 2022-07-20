@@ -23,3 +23,60 @@ Automating the Upgenix browser
 </p>
 
 
+### selenium-cucumber-java
+
+This repository contains a collection of sample `Upgenix-QA` projects and libraries that demonstrate how to
+use the tool and develop automation script using the Cucumber BDD framework with Java as programming language.
+It generate JSON, HTML and Txt reporters as well. It also generate `screen shots` for your tests if you enable it and
+also generate `error shots` for your failed test cases as well.
+
+### Installation (pre-requisites)
+
+1. JDK 1.8+ 
+2. Maven 
+3. IntelliJ
+4. IntelliJ Plugins for
+    - Maven
+    - Cucumber
+5. Browser driver (make sure you have your desired browser driver and class path is set)
+
+### Framework set up
+
+Git:
+
+    git clone https://github.com/BalamiRR/Upgenix-QA.git
+ 
+Manually :
+
+Fork / Clone repository from [here](https://github.com/BalamiRR/Upgenix-QA/archive/main.zip) or download zip and set
+it up in your local workspace.
+
+
+
+### Using canned test in the project:
+
+
+```
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+    plugin = {
+        "html:target/cucumber-reports.html",
+        "json:target/cucumber.json",
+        "rerun:target/rerun.txt",
+        "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+    },
+    features = "src/main/resources/features",
+    glue = "com/upgenix/step_definitions",
+    dryRun = false,
+    tags = "@LogOut"
+)
+public class CukesRunner {
+
+
+
+}
+```
