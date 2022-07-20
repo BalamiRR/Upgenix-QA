@@ -23,7 +23,7 @@ Automating the Upgenix browser
 </p>
 
 
-### selenium-cucumber-java
+### Upgenix-QA
 
 This repository contains a collection of sample `Upgenix-QA` projects and libraries that demonstrate how to
 use the tool and develop automation script using the Cucumber BDD framework with Java as programming language.
